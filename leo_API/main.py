@@ -21,7 +21,7 @@ class Leo:
         temperature = 0.2,
         top_k = -1,
         top_p = 0.999,
-    ):
+    )-> LeoCompleteResponse:
         json_data = {
             'max_tokens_to_sample': max_tokens_to_sample,
             'model': model,
@@ -57,7 +57,7 @@ class AsyncLeo:
         temperature = 0.2,
         top_k = -1,
         top_p = 0.999,
-    ):
+    )-> LeoCompleteResponse:
         json_data = {
             'max_tokens_to_sample': max_tokens_to_sample,
             'model': model,
